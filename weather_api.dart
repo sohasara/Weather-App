@@ -14,7 +14,6 @@ Future<Weather> fetchAlbum() async {
   final response = await http.get(Uri.parse(
       'https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=667a34715c86a6964e60a2d50ffc394a'));
 
-  //ignore: unrelated_type_equality_checks
   if (response == 200) {
     return Weather.fromjson(jsonDecode(response.body) as Map<String, dynamic>);
   } else {
