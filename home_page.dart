@@ -117,16 +117,15 @@ class _HomeeState extends State<Homee> {
                     Stack(
                       children: [
                         Icon(
-                          //Icons.thunderstorm_rounded,
-                          // Icons.cloud,
+                         
                           Icons.sunny,
                           size: 120,
                           color: Colors.amber[400],
                         ),
                         const Icon(
-                          //Icons.thunderstorm_rounded,
+
                           Icons.cloud,
-                          //Icons.sunny,
+                          
                           size: 240,
                           color: Colors.white,
                         ),
@@ -144,16 +143,10 @@ class _HomeeState extends State<Homee> {
                           return Text('${snapshot.error}');
                         }
 
-                        // By default, show a loading spinner.
+                       
                         return const CircularProgressIndicator();
-                        /* return Text(
-                          '32°C',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 45,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        );*/
+                       
+                        
                       },
                     ),
                     const Text(
